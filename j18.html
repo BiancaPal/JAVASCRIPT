@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+    p{
+      width: 300px;
+      height: 50px;
+      background-color: grey;
+      text-align: center ;
+      margin: 0 ;
+      vertical-align: middle;
+      font-size: 20px;
+      font-family:'Times New Roman', Times, serif;
+      
+    }
+    .trueFalse{
+      width: 100px;
+      height: 50px;
+      background-color: lightgrey;
+      text-align: center;
+      margin: 20px;
+    }
+    .container2{
+      width: 410px;
+      height: 50px;
+      background-color: lightgrey;
+      text-align: center;
+      margin: 0;
+      vertical-align: middle;
+      font-size: 20px;
+      font-family:'Times New Roman', Times, serif;
+
+    }
+    .button{
+      font-size: 20px;
+      font-family:'Times New Roman', Times, serif;
+
+    }
+  
+  </style>
+
+</head>
+
+<body>
+
+<table>
+
+<tr>
+  <td><p>20 + 55 = 70</p></td>
+  
+  <td class="trueFalse">
+    <input type="radio" id="q1-true" name="q1">Cert
+    <input type="radio" id="q1-false" name="q1">Fals
+  </td>
+</tr>
+
+
+<tr>
+  <br>
+  <td><p>122-15 = 107</p></td>
+
+  <td class="trueFalse">
+    <input type="radio" id="q2-true" name="q2">Cert
+    <input type="radio" id="q2-false" name="q2">Fals
+  </td>
+</tr>
+
+<tr>
+  <br>
+  <td><p>12 * 4 = 48</p></td>
+
+
+  <td class="trueFalse">
+    <input type="radio" id="q3-true" name="q3">Cert
+    <input type="radio" id="q3-false" name="q3">Fals
+  </td>
+
+</tr>
+
+<tr>
+  <br>
+  <td><p>81 / 9 = 9</p></td>
+
+  <td class="trueFalse">
+    <input type="radio" id="q4-true" name="q4">Cert
+    <input type="radio" id="q4-false" name="q4">Fals
+  </td>
+</tr>
+
+<tr>
+  <br>
+  <td><p>10 * 0,5 = 15</p></td>
+
+  <td class="trueFalse">
+    <input type="radio" id="q5-true" name="q5">Cert
+    <input type="radio" id="q5-false" name="q5">Fals
+  </td>
+
+</tr>
+
+<tr>
+  <br>
+  <td><p>-14 + -5 = -9</p></td>
+
+  <td class="trueFalse">
+    <input type="radio" id="q6-true" name="q6">Cert
+    <input type="radio" id="q6-false" name="q6">Fals
+  </td>
+</tr>
+
+<tr>
+  <br>
+  <td><p>(5 * 2) - (3 * 3) = 1</p></td>
+
+  <td class="trueFalse">
+    <input type="radio" id="q7-true" name="q7">Cert
+    <input type="radio" id="q7-false" name="q7">Fals
+  </td>
+</tr>
+</table>
+  
+<div class="container2"><button class="button" onclick="comprova()">Comprovar</button></div>
+
+
+  
+  CORRECT <input class="correct" type="text" id="correct" >
+  
+  INCORRECT <input class="incorrect" type="text" id="incorrect" >
+
+
+
+
+  <script>
+    
+    var q1True = document.getElementById("q1-true");
+    var q1False = document.getElementById("q1-false");
+
+    var q2True = document.getElementById("q2-true");
+    var q2False = document.getElementById("q2-false");
+
+    var q3True = document.getElementById("q3-true");
+    var q3False = document.getElementById("q3-false");
+
+    var q4True = document.getElementById("q4-true");
+    var q4False = document.getElementById("q4-false");
+
+    var q5True = document.getElementById("q5-true");
+    var q5False = document.getElementById("q5-false");
+
+    var q6True = document.getElementById("q6-true");
+    var q6False = document.getElementById("q6-false");
+
+    var q7True = document.getElementById("q7-true");
+    var q7False = document.getElementById("q7-false");
+
+    var correct = document.getElementById("correct");
+    var incorrect = document.getElementById("incorrect");
+
+    var countCorrectAnswer = 0;
+    var countIncorrectAnswer =0;
+    
+
+    function comprova() {
+      if (q1False.checked === true) {
+        // alert("correct");
+        countCorrectAnswer++;
+
+
+       } else {
+        
+        countIncorrectAnswer++;
+      }
+
+
+      if (q2False.checked === false) {
+        // alert("correct");
+        countCorrectAnswer++;
+
+
+      } else {
+        
+        countIncorrectAnswer++;
+      }
+
+
+      if (q3False.checked === false) {
+        // alert("correct");
+        countCorrectAnswer++;
+
+
+      } else {
+        
+        countIncorrectAnswer++;
+      }
+
+
+      if (q4False.checked === false) {
+        // alert("correct");
+        countCorrectAnswer++;
+
+
+      } else {
+        
+        countIncorrectAnswer++;
+      }
+
+
+      if (q5False.checked === true) {
+        // alert("correct");
+        countCorrectAnswer++;
+
+
+      } else {
+        
+        countIncorrectAnswer++;
+      }
+
+
+      if (q6False.checked === true) {
+        // alert("correct");
+        countCorrectAnswer++;
+
+
+      } else {
+        
+        countIncorrectAnswer++;
+      }
+
+
+      if (q7False.checked === false) {
+        // alert("correct");
+        countCorrectAnswer++;
+
+
+      } else {
+        
+        countIncorrectAnswer++;
+      }
+     correct.value=countCorrectAnswer;
+     incorrect.value=countIncorrectAnswer;
+     
+     
+
+
+
+    }
+  </script>
+
+
+</body>
+
+</html>

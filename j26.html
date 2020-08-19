@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  WEB:<input name="web"  id="web" type="text" placeholder="extension.com"/>
+  <input type="submit" onclick="substitueix()" name="substitueix" value="substitueix">
+
+  Domini:<input name="web" id="substitucio" type="text" />
+  
+  
+
+  <script language="javascript">
+  
+    function substitueix(){
+      var web = document.getElementById("web").value;
+      var substitucio = web.replace("com", "cat");;
+      document.getElementById("substitucio").value=substitucio;
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+ #divis{
+  background-color:blue;
+  width:200px;
+  height:300px;
+  
+ }
+</style>
+</head>
+
+<body>
+
+
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<div id="divis">LOLA</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("vermell");
+  
+  if (x="vermell"){
+    divis.style.backgroundColor = "red";
+  }
+  
+  if (x="blau"){
+    divis.style.backgroundColor = "blue";
+  }
+  
+  if (x="verd"){
+    divis.style.backgroundColor = "green";
+  }
+  
+  if (x="taronja"){
+    divis.style.backgroundColor = "orange";
+  }
+  
+  
+  
+}
+
+</script>
+<select id="background-color" name="colorBgList" onchange="myFunction()">
+       <option value="vermell">Vermell</option>
+       <option value="blau">Blau</option>
+       <option value="verd">Verd</option>
+       <option value="taronja">Taronja</option>
+</select>
+
+</body>
+</html>

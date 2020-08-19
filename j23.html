@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  WEB:<input name="web"  id="web" type="text" placeholder="extension.com"/>
+  <input type="submit" onclick="arregla()" name="arregla" value="arregla">
+
+  Minuscula:<input name="web" id="minuscula" type="text" />
+  
+  
+
+  <script language="javascript">
+  
+    function arregla(){
+      var input = document.getElementById("web").value;
+      var min = input.toLowerCase();
+      document.getElementById("minuscula").value=min;
+    }
+  </script>
+  
+</body>
+
+</html>

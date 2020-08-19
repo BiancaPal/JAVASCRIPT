@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script language="javascript">
+  
+  function operacions(){
+    
+    var numero1;
+    var numero2;
+    var suma;
+    var resta;
+    var multip;
+    var divis;
+
+    
+    numero1=window.prompt("Numero 1");
+    numero2=window.prompt("Numero 2");
+
+    suma=parseInt(numero1)+parseInt(numero2);
+    resta=parseInt(numero1)-parseInt(numero2);
+    multip=parseInt(numero1)*parseInt(numero2);
+    divis=parseInt(numero1)/parseInt(numero2);
+ 
+    window.alert(numero1+"+"+numero2+"="+suma+"\n"+numero1+"-"+numero2+"="+resta+"\n"+numero1+"*"+numero2+"="+multip+"\n"+numero1+"/"+numero2+"="+divis);
+
+  }
+
+  </script>
+
+</head>
+<body>
+
+  <input type="button" value="operacions" onClick="operacions();" />
+  
+</body>
+</html>

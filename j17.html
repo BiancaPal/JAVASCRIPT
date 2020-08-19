@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #container {
+      display:flex;
+      flex-direction: column;
+      background-color: lightgrey;
+      width: 400px;
+      margin: 0 auto;
+     
+
+    }
+
+    input{
+      margin: 20px 0 20px auto;
+    }
+
+    button{
+      width:30px;
+      flex-direction: row;
+    }
+
+    /* #resultat {
+      height: 20px;
+      width: 110px;
+      background-color: white;
+      margin: 0 auto;
+      text-align: right;
+      font-size: auto;
+      color: black;
+    } */
+  </style>
+
+  <script language="javascript">
+
+    function suma() {
+      var x = document.getElementById("numero1").value;
+      var y = document.getElementById("numero2").value;
+
+      var suma = parseInt(x) + parseInt(y);
+      resultat.value = suma;
+    }
+    function resta() {
+      var x = document.getElementById("numero1").value;
+      var y = document.getElementById("numero2").value;
+      var resta = parseInt(x) - parseInt(y);
+
+      resultat.value = resta;
+    }
+    function divisio() {
+      var x = document.getElementById("numero1").value;
+      var y = document.getElementById("numero2").value;
+
+      var divisio = parseInt(x) / parseInt(y);
+
+      resultat.value = divisio;
+    }
+    function multiplicacio() {
+      var x = document.getElementById("numero1").value;
+      var y = document.getElementById("numero2").value;
+
+      var multiplicacio = parseInt(x) * parseInt(y);
+
+      resultat.value = multiplicacio;
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <input type="text" id="numero1">
+    <br>
+    <input type="text" id="numero2">
+    <br>
+
+    <div>
+    <button onclick="suma()">+</button>
+
+    <button onclick="resta()">-</button>
+
+    <button onclick="divisio()">/</button>
+
+    <button onclick="multiplicacio()">*</button>
+    <hr>
+  </div>
+
+    
+    <input type="text" id="resultat">
+    
+  </div>
+
+</body>
+
+</html>

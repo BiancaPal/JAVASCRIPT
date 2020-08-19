@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    #rellotge {
+      font-family: sans-serif;
+      color:black;
+      font-size: 56px;
+      font-style: oblique;
+      text-align: center;
+      height: 70px;
+      width: 400px;
+      background-color: grey;
+}
+
+  </style>
+
+</head>
+<body>
+  <div id="rellotge"></div>
+
+  <script language="javascript">
+  
+  function avui() {
+  var data = new Date(); 
+  var hour = data.getHours();
+  var min = data.getMinutes();
+  var sec = data.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  document.getElementById("rellotge").innerText = hour + " : " + min + " : " + sec; 
+    var t = setTimeout(function(){ avui() }, 1000); 
+}
+
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+
+avui(); 
+
+</script>
+  
+</body>
+</html>

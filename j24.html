@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  WEB:<input name="web"  id="web" type="text" placeholder="extension.com"/>
+  <input type="submit" onclick="extreu()" name="extreu" value="extreu">
+
+  Domini:<input name="web" id="domini" type="text" />
+  
+  
+
+  <script language="javascript">
+  
+    function extreu(){
+      var web = document.getElementById("web").value;
+      var abansDomini = web.indexOf(".")+1;
+      var despresDomini =web.indexOf(".com");
+      var domini = web.slice(abansDomini,despresDomini);
+      document.getElementById("domini").value=domini;
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  WEB:<input name="web" type="text" placeholder="extension.com"  id="web"/>
+  <input type="submit" onclick="comprova()" name="Comprova" value="comprova">
+  <script language="javascript">
+
+  
+    function comprova(){
+      var extensioCom = web.value.search(".com");
+      if(extensioCom > 0){
+        console.log(extensioCom); 
+        console.log("CORRECT!"); 
+
+      }else{
+        console.log("There is an invalid extension");
+      }
+      
+
+    }
+  </script>
+</body>
+</html>

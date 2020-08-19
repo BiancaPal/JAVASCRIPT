@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #recuadre{
+      background-color:black;
+      font-family:Arial, Helvetica, sans-serif;
+      height: 200px;
+      line-height: 200px;
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 50px;
+      color:white;
+    }
+    #recuadre2{
+      background-color:grey;
+      font-family:Arial, Helvetica, sans-serif;
+      height: 300px;
+      line-height: 25px;
+      width: 400px;
+      margin: 0 auto;
+      font-size: 20px;
+      color:black;
+    }
+
+  </style>
+
+  <script language="javascript">
+  
+  function backgroundColorChange() {
+  var x = document.getElementById("background-color");
+  
+  
+  if (document.getElementById('background-color').value == 'vermell') {
+       document.getElementById('recuadre').style.backgroundColor = 'red';
+  }
+  
+  
+  if (document.getElementById('background-color').value == 'blau') {
+       document.getElementById('recuadre').style.backgroundColor = 'blue';
+  }
+  
+  
+  if (document.getElementById('background-color').value == 'verd') {
+       document.getElementById('recuadre').style.backgroundColor = 'green';
+  }
+  
+  
+  if (document.getElementById('background-color').value == 'taronja') {
+       document.getElementById('recuadre').style.backgroundColor = 'orange';
+  }
+  }
+
+
+  function tableColorChange() {
+  var x = document.getElementById("table-color");
+
+  if (document.getElementById('table-color').value == 'magenta') {
+       document.getElementById('recuadre').style.color = '#FF00FF';
+  }
+  
+  
+  if (document.getElementById('table-color').value == 'turquoise') {
+       document.getElementById('recuadre').style.color = '#40E0D0';
+  }
+  
+  
+  if (document.getElementById('table-color').value == 'esmeralda') {
+       document.getElementById('recuadre').style.color = '#50c878';
+  }
+  
+  
+  if (document.getElementById('table-color').value == 'or') {
+       document.getElementById('recuadre').style.color = '#FFD700';
+  }
+  }
+
+
+  function tamanyTitolChange() {
+  var x = document.getElementById("tamanyTitol");
+ 
+  if (document.getElementById('tamanyTitol').value == '10 punts') {
+       document.getElementById('recuadre').style.fontSize = '10px';
+  }
+  
+  
+  if (document.getElementById('tamanyTitol').value == '20 punts') {
+       document.getElementById('recuadre').style.fontSize = '20px';
+  }
+  
+  
+  if (document.getElementById('tamanyTitol').value == '30 punts') {
+       document.getElementById('recuadre').style.fontSize = '30px';
+  }
+  
+  
+  if (document.getElementById('tamanyTitol').value == '40 punts') {
+       document.getElementById('recuadre').style.fontSize = '40px';
+  }
+  }
+
+
+
+  function ampladaTaulaChange() {
+  var x = document.getElementById("ampladaTaula");
+  
+  
+  if (document.getElementById('ampladaTaula').value == '100') {
+       document.getElementById('recuadre').style.width = '100px';
+  }
+  
+  
+  if (document.getElementById('ampladaTaula').value == '200') {
+       document.getElementById('recuadre').style.width = '200px';
+  }
+  
+  
+  if (document.getElementById('ampladaTaula').value == '300') {
+       document.getElementById('recuadre').style.width = '300px';
+  }
+  
+  
+  if (document.getElementById('ampladaTaula').value == '400') {
+       document.getElementById('recuadre').style.width = '400px';
+  }
+  }
+
+
+
+  </script>
+</head>
+
+<body>
+  <div id="recuadre">Personalitza</div>
+  <div id="recuadre2">
+  <form>
+    <label for="background-color">Color de fons:</label>
+    <select id="background-color" name="colorBgList" form="" onchange="backgroundColorChange()">
+       <option>Select</option>
+       <option value="vermell">Vermell</option>
+       <option value="blau">Blau</option>
+       <option value="verd">Verd</option>
+       <option value="taronja">Taronja</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+
+    <label for="table-color">Color de taula:</label>
+    <select id="table-color" name="colorTbList" form="" onchange="tableColorChange()">
+       <option>Select</option>
+       <option value="magenta">Magenta</option>
+       <option value="turquoise">Turquoise</option>
+       <option value="esmeralda">Esmeralda</option>
+       <option value="or">Or</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+
+    <label for="tamanyTitol">Tamany títol:</label>
+    <select id="tamanyTitol" name="tamanyTitol" form="" onchange="tamanyTitolChange()">
+       <option>Select</option>
+       <option value="10 punts">10 punts</option>
+       <option value="20 punts">20 punts</option>
+       <option value="30 punts">30 punts</option>
+       <option value="40 punts">40 punts</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+
+    <label for="ampladaTaula">Amplada Taula:</label>
+    <select id="ampladaTaula" name="ampladaTaula" form="" onchange="ampladaTaulaChange()">
+       <option>Select</option> 
+       <option value="100">100</option>
+       <option value="200">200</option>
+       <option value="300">300</option>
+       <option value="400">400</option>
+    </select>
+
+  </form>
+
+
+  </div>
+  
+</body>
+</html>

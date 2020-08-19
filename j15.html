@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     #table{
+       
+       width: 400px;
+       height: 400px;
+       font-size: 38px;
+       text-align:center;
+       background-color:white;
+       border-spacing:5px;
+       }
+
+      .cell{
+
+        border: 2px solid #000;
+        border-radius: 20px;
+        background-color: #999;
+        width: 133px;
+        height: 133px;
+      }
+
+      .x-state{
+
+        background-color: red;
+
+      }
+
+      .y-state{
+
+        background-color:blue;
+        
+      }
+
+  </style>
+
+</head>
+<body>
+  
+  <table id="table" width="100%" border="1">
+    <tr>
+      <!-- <td class="cell" onClick="this.classList.toggle('x-state')" ondblclick="this.classList.toggle('y-state')"></td> -->
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'" ondblclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondblclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondblclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+    </tr>
+    <tr>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondlclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondblclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondblclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+    </tr>
+    <tr>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondblclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondblclick="this.classList.toggle('y-state'); this.innerHTML='Y'" ></td>
+      <td class="cell" onClick="this.classList.toggle('x-state'); this.innerHTML='X'"  ondblclick="this.classList.toggle('y-state')"></td>
+    </tr>
+  </table>
+  
+
+  
+</body>
+</html>
